@@ -118,6 +118,18 @@ class Uuid4Spec extends ObjectBehavior {
                  ->shouldReturn($expected);
         }
     }
+    /** @noinspection PhpUnhandledExceptionInspection */
+    public function it_should_throw_length_exception_for_long_input(): void {
+        $data = [96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 48, 49, 50, 51, 52, 53];
+        $this->shouldThrow(new \LengthException('Expected data array length of 16 but was given length: 17'))
+             ->during('setUuid0', [$data]);
+    }
+    /** @noinspection PhpUnhandledExceptionInspection */
+    public function it_should_throw_length_exception_for_short_input(): void {
+        $data = [98, 99, 100, 101, 102, 103, 104, 105, 106, 48, 49, 50, 51, 52, 53];
+        $this->shouldThrow(new \LengthException('Expected data array length of 16 but was given length: 15'))
+             ->during('setUuid0', [$data]);
+    }
     public function let(): void {
         $this->beAnInstanceOf(MockUuid4::class);
     }

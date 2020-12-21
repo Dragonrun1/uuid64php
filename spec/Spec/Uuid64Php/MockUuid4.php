@@ -61,7 +61,7 @@ class MockUuid4 {
     {
         return $this->asUuid();
     }
-    public function setUuid0(array $data): void
+    public function setUuid0(?array $data = null): void
     {
         $this->initUuid($data);
     }
