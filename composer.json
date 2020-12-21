@@ -50,6 +50,12 @@
     "friends-of-phpspec/phpspec-code-coverage": "^6.0",
     "phpspec/phpspec": "^7.0"
     },
+    "scripts": {
+        "test": "phpspec run -v --ansi"
+    },
+    "scripts-descriptions": {
+        "test": "Runs the phpspec tests."
+    },
     "support": {
         "issues": "https://github.com/Dragonrun1/uuid64php/issues",
         "source": "https://github.com/Dragonrun1/uuid64php"
