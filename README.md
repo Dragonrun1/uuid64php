@@ -1,12 +1,11 @@
-# Uuid64Type
+# Uuid64Php
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 ![CI](https://github.com/Dragonrun1/uuid64php/workflows/Tests/badge.svg?branch=main)
 [![Coverage Status](https://coveralls.io/repos/github/Dragonrun1/uuid64php/badge.svg?branch=main)](https://coveralls.io/github/Dragonrun1/uuid64php?branch=main)
 
-A UUID v4 (random) library with a new custom compact format which is web and
-database friendly.
-It also includes helper traits to make integration easier in Doctrine.
+A UUID v4 (random) library with a new custom compact format which is more web
+and database friendly.
 
 ## Table Of Contents
 
@@ -14,13 +13,12 @@ It also includes helper traits to make integration easier in Doctrine.
 * [Usage](#usage)
 * [Why make this project?](#why-make-this-project)
 * [Related Projects](#related-projects)
-* [Contributing](#contributing)
 * [Licenses](#licenses)
 
 ## Installation
 
 Use [composer](https://getcomposer.org/download/) to install from
-[packagist](https://packagist.org/packages/dragonrun1/uuid64type).
+[packagist](https://packagist.org/packages/dragonrun1/uuid64php).
 
 ```bash
 composer require dragonrun1/uuid64php
@@ -34,8 +32,8 @@ TODO
 
 There already exists several fine UUID v4 (random) libraries for PHP, so it
 would make little sense to make another one if that was all it did.
-In addition to UUIDs this library tries to solve a limitation in database
-designs.
+In addition to UUIDs this library tries to solve some limitations when trying to
+use them on the web and in databases.
 I'll detail the database limitation this library tries to overcome next.
 
 ### Database Engine Limitation
@@ -97,7 +95,7 @@ format:
     escaping in URLs.
   * HTML compatible - Doesn't include any special chars that need to be escaped
     when used in html forms or tag property values. HTML 5 has relaxed the rule
-    requiring all ID property values to start with a letter.
+    that required all ID property values to start with a letter.
   * More Human readable - Since base 64 is shorter that other formats most
     people find it easier to read.
   * The best memory to speed trade-off - The binary string takes up the
@@ -115,32 +113,14 @@ Started the __uuid64ts__ project as a translation from this project into
 Typescript but along the way ended up feeding back into version 2.0 as well
 after issues/bugs in the version 1.0 code had been exposed.
 
+TODO: Since doctrine stuff not included should this be removed?
+
 [https://github.com/Dragonrun1/person_db_skeleton](https://github.com/Dragonrun1/person_db_skeleton)
 This project developed in parallel with this project through version 1.0.
 They both were based on noticing how many prior projects seem to have these same
 common needs for some kind of person object.
 I decided to stop reinventing over and over and instead make something that was
 easy to re-use in all future projects.
-
-## Contributing
-
-Contributors are welcome.
-Please note that this project has a [Contributor Covenant Code of Conduct].
-By participating in this project you agree to abide by its terms.
-
-All intentionally contributed code will be considered to also be contributed
-under a dual licensing of [APACHE] and [MIT] without any additional terms or
-conditions.
-Please include your information in a comment on all code files for the copyright
-etc.
-
-All intentionally contributed documentation or non-code text like this README
-etc. will be considered to be contributed under the same [CC-BY-SA] license
-without any additional terms or conditions.
-
-Pull requests are always welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-Please make sure to update or add tests as appropriate.
 
 ## Licenses
 
