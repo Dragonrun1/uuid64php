@@ -1,7 +1,7 @@
 # Uuid64Php
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
-![CI](https://github.com/Dragonrun1/uuid64php/workflows/Tests/badge.svg?branch=main)
+[![CI](https://github.com/Dragonrun1/uuid64php/workflows/CI/badge.svg?branch=main)](https://github.com/Dragonrun1/uuid64php/workflows/CI/badge.svg?branch=main)
 [![Coverage Status](https://coveralls.io/repos/github/Dragonrun1/uuid64php/badge.svg?branch=main)](https://coveralls.io/github/Dragonrun1/uuid64php?branch=main)
 
 A UUID v4 (random) library with a new custom compact format which is more web
