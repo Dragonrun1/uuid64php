@@ -51,10 +51,14 @@
     "phpspec/phpspec": "^7.0"
     },
     "scripts": {
-        "test": "phpspec run -v --ansi"
+        "test": "phpspec run -v --ansi",
+        "uuid4:clover": "phpdbg -qrr vendor/phpspec/phpspec/bin/phpspec run --ansi --config phpspec_clover.yaml",
+        "uuid4:coverage": "phpdbg -qrr vendor/phpspec/phpspec/bin/phpspec run --ansi --config phpspec_coverage.yaml"
     },
     "scripts-descriptions": {
-        "test": "Runs the phpspec tests."
+        "test": "Runs the phpspec tests.",
+        "uuid4:clover": "Runs the phpspec tests with code coverage output to coverage/clover.xml file.",
+        "uuid4:coverage": "Runs the phpspec tests with code coverage using phpdbg."
     },
     "support": {
         "issues": "https://github.com/Dragonrun1/uuid64php/issues",
