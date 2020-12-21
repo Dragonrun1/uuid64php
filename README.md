@@ -1,13 +1,11 @@
 # Uuid64Type
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
-![Tests](https://github.com/Dragonrun1/uuid64type/workflows/Tests/badge.svg?branch=main)
-[![Coverage Status](https://coveralls.io/repos/github/Dragonrun1/uuid64type/badge.svg?branch=main)](https://coveralls.io/github/Dragonrun1/uuid64type?branch=main)
+![CI](https://github.com/Dragonrun1/uuid64php/workflows/Tests/badge.svg?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/Dragonrun1/uuid64php/badge.svg?branch=main)](https://coveralls.io/github/Dragonrun1/uuid64php?branch=main)
 
-[comment]: <> ([![Scrutinizer Code Quality]&#40;https://scrutinizer-ci.com/g/Dragonrun1/uuid64type/badges/quality-score.png?b=master&#41;]&#40;https://scrutinizer-ci.com/g/Dragonrun1/uuid64type/?branch=master&#41;)
-
-An UUID v4 (random) library with a new custom compact format for use in database
-primary keys.
+A UUID v4 (random) library with a new custom compact format which is web and
+database friendly.
 It also includes helper traits to make integration easier in Doctrine.
 
 ## Table Of Contents
@@ -25,25 +23,12 @@ Use [composer](https://getcomposer.org/download/) to install from
 [packagist](https://packagist.org/packages/dragonrun1/uuid64type).
 
 ```bash
-composer require dragonrun1/uuid64type
+composer require dragonrun1/uuid64php
 ```
 
 ## Usage
 
-For an example of integrating with Doctrine cli configuration have a look at:
-
-`config/example-cli-config.php`
-
-For examples of using Uuid64Type in a Doctrine project see my related project on
-github:
-[person_db_skeleton]
-
-Have a look at the `config/cli-config.php` in the skeleton project for how to
-register the custom type in Doctrine or the `config/example-cli-config.php` in
-this project.
-
-See one of the `src/Model/Entities/*` table class files in the skeleton project
-for how to use the helper traits etc.
+TODO
 
 ## Why make this project?
 
@@ -80,7 +65,7 @@ to how many rows there are in it and by add a second row make a good guess at
 how fast it is growing. How is that information useful? What if the
 table holds users accounts, and it's their account ID? Now they have some
 idea how many actual user accounts they can get in a data breach or are
-available to be attacked. Say they get just a list of user names, and the
+available to be attacked. Say they get just a list of usernames, and the
 IDs which ones should they attack first? I'd attack the first accounts
 made as they are likely to be admin or test accounts with greater
 access. I'm sure you can think of many other ways that simple incremental
@@ -144,7 +129,7 @@ Please note that this project has a [Contributor Covenant Code of Conduct].
 By participating in this project you agree to abide by its terms.
 
 All intentionally contributed code will be considered to also be contributed
-under the same [BSD-3-Clause] license without any additional terms or
+under a dual licensing of [APACHE] and [MIT] without any additional terms or
 conditions.
 Please include your information in a comment on all code files for the copyright
 etc.
@@ -159,21 +144,30 @@ Please make sure to update or add tests as appropriate.
 
 ## Licenses
 
-All code is licensed under the [BSD-3-Clause] license.
-You can find a copy of the license in the [LICENSE-BSD] file.
-All documentation like this README is licensed under
-Creative Commons Attribution-ShareAlike 4.0 International License (CC-BY-SA).
+All code is licensed under either of the
+
+* [APACHE] - Apache License, Version 2.0
+* [MIT] - MIT License
+
+at your option.
+
+You can find copies of the licenses in the [LICENSE-APACHE] and the
+[LICENSE-MIT] files.
+All documentation like this README is licensed under the Creative Commons
+Attribution-ShareAlike 4.0 International License (CC-BY-SA).
 You can find a copy of the [CC-BY-SA] license in the [LICENSE-CC-BY-SA] file.
 
-[BSD-3-Clause]: https://spdx.org/licenses/BSD-3-Clause.html
+[APACHE]: https://opensource.org/licenses/Apache-2.0
 [CC-BY-SA]: http://creativecommons.org/licenses/by-sa/4.0/
 [Contributor Covenant Code of Conduct]: CODE_OF_CONDUCT.md
-[LICENSE-BSD]: LICENSE-BSD
+[LICENSE-APACHE]: LICENSE-APACHE
 [LICENSE-CC-BY-SA]: LICENSE-CC-BY-SA
+[LICENSE-MIT]: LICENSE-MIT
+[MIT]: https://opensource.org/licenses/MIT
 [person_db_skeleton]: https://github.com/Dragonrun1/person_db_skeleton
 
 <hr>
-Copyright &copy; 2019-present, Michael Cummings<br/>
+Copyright &copy; 2020-present, Michael Cummings<br/>
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
 </a>

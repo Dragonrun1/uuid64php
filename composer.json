@@ -1,8 +1,9 @@
 {
     "name": "dragonrun1/uuid64php",
-    "description": "An UUID v4 (random) library with a new custom compact format for use in database primary keys.",
+    "description": "An UUID v4 (random) library with a new custom compact format which is web and database friendly.",
     "minimum-stability": "stable",
-    "license": "MIT OR Apache-2.0",
+    "license": "Apache-2.0 OR MIT",
+    "version": "0.0.1",
     "authors": [
         {
             "name": "Michael Cummings", "email": "dragonrun1@gmail.com"
