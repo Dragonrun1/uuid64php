@@ -3,7 +3,7 @@
     "description": "An UUID v4 (random) library with a new custom compact format which is web and database friendly.",
     "minimum-stability": "stable",
     "license": "Apache-2.0 OR MIT",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "authors": [
         {
             "name": "Michael Cummings", "email": "dragonrun1@gmail.com"
